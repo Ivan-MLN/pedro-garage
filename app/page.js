@@ -545,9 +545,9 @@ const PedroGarage = () => {
   );
 
   return (
-    <div className="min-h-screen bg-black relative">
+    <div className="min-h-screen bg-black relative overflow-x-hidden">
       {/* Fixed Grid Background */}
-      <div className="fixed inset-0 z-0 pointer-events-none">
+      <div className="fixed inset-0 z-0 pointer-events-none bg-black">
         <div 
           className="absolute inset-0 opacity-15"
           style={{
@@ -697,6 +697,14 @@ const PedroGarage = () => {
 
         html {
           scroll-behavior: smooth;
+          overflow-x: hidden;
+          background-color: #000;
+        }
+
+        body {
+          overflow-x: hidden;
+          background-color: #000;
+          overscroll-behavior: none;
         }
 
         * {
